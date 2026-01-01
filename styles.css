@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+}
+.left-con > img {
+    height: 100vh;
+    width: 100%;
+}
+.left-con {
+    width: 40%;
+    border: 1px solid black;
+    position: relative;
+}
+.right-con {
+    width: 60%;
+}
+.odin-stick {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.odin-stick > img {
+    width:60px;
+    height: 80px;
+}
+.odin-stick > p {
+    color: white;
+    font-size: 80px;
+}
+.odin-stick + p {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 202px;   
+}
+:link {
+    color: white;
+}
