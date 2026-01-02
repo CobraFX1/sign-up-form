@@ -1,53 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Roboto;
+}
+@font-face {
+    font-family: "Norse";
+    src: url("Norsebold.woff");
+    font-weight: normal;
+    font-style: normal;
 }
 .left-con > img {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 .left-con {
-    width: 40%;
-    border: 1px solid black;
-    position: relative;
+  width: 40%;
+  border: 1px solid black;
+  position: relative;
 }
-.right-con {
+/* .right-con {
     width: 60%;
-}
+} */
 .odin-stick {
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .odin-stick > img {
-    width:60px;
-    height: 80px;
+  width: 60px;
+  height: 80px;
 }
 .odin-stick > p {
-    color: white;
-    font-size: 80px;
+  color: white;
+  font-size: 80px;
+  font-family: Norse;
 }
 .odin-stick + p {
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 202px;   
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
 }
 :link {
-    color: white;
+  color: white;
+}
+.right-con {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header {
+  margin: 50px 0px 10px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 570px;
+  
+}
+.last-text {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.main {
+  background-color: white;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e7eb; 
+  padding: 25px 0px 25px 35px;
+}
+h2 {
+  color: grey;
+  font-size: 25px;
+}
+.input-field-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-fields {
+    display: flex;
+    gap: 40px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.input-group label {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    color: #555;
+}
+input {
+    height:25px;
+}
+.footer {
+    margin-left: 30px;
+}
+input:focus {
+    border-color: blue;
+}
+input:invalid {
+    border-color: red;
+}
+button {
+  width: 200px;
+  color: #596D48;
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+a[href="#"]{
+    color: green;
+    text-decoration: none;
 }
